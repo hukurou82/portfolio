@@ -1,0 +1,129 @@
+/* ヘッダー ---------------------------------*/
+.jumbotron {
+    background-image: url("img/umi.jpg");
+    background-size: cover;
+    background-position: center 70%;
+  }
+  /*ヘッダー終わり---------------------------------*/
+  
+  /*メニュー部分---------------------------------*/
+  #guest{
+    text-align: center;
+  }
+  
+  .container > row{
+    border-radius:3em;
+  }
+  
+  #MenuContainer{
+    margin-bottom: 40px;
+  }
+  
+  
+  /*メニュー動き部分---------------------------------*/
+  /* 「RightToLeft」の動作内容 */
+  @keyframes RightToLeft {
+    0% {
+      opacity: 0;/* 透明 */
+      transform: translateX(50px);/* X軸方向に50px */
+    }
+    100% {
+      opacity: 1;/* 不透明 */
+      transform: translateX(0);
+    }
+  }
+  
+  /* 「RightToLeft」を適用する箇所 */
+  #menu {
+    animation-duration: 3s;/* アニメーション時間 */
+    animation-name: RightToLeft;/* アニメーション名 */
+    font-size: 1em;
+    transition: all .50s;
+  }
+  #menu:hover{
+    color: #fff;
+    background-color: #2ecc71;
+  }
+  
+  /*メニュー部分終わり---------------------------------*/
+  
+  /*メイン部分---------------------------------*/
+  #maintitle{
+    margin-top: 20px;
+  }
+  
+  .title{
+    font-family:Shadows Into Light,cursive;
+    text-decoration:underline solid #707070;
+    font-size:30px;
+    color:#707070;
+    margin-bottom: 20px;
+  }
+  
+  .contactTitle{
+    font-family:Shadows Into Light,cursive;
+    text-decoration:underline solid #707070;
+    font-size:30px;
+    color:#707070;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .img-size{
+    width: 50%;
+  }
+  
+  .name{
+    text-align: center;
+    font-size: 80px;
+    font-family: Shadows Into Light,cursive;
+  }
+  
+  .name-setumei{
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  #e-mail{
+    font-family: Shadows Into Light,cursive;
+    font-size: 20px;
+    margin-left: -30px;
+  }
+  
+  
+  
+  /* homeロゴアニメーション */
+  #home-img{
+    margin-top: 5em;
+    animation-name: huwahuwa;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-duration: 1.5s;
+  }
+  @keyframes huwahuwa {
+    0% {
+        transform: translate(0,0px);
+    }
+  
+    100% {
+        transform: translate(0,-15px)
+    }
+  }
+  /* homeロゴアニメーション終わり */
+  
+  /*メニュー部分終わり---------------------------------*/
+  
+  /* フッター部分 ---------------------------------*/
+  .fixed{
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .icon{
+    font-size: 30px;
+    color:black;
+  }
+  /*ヘッター終わり---------------------------------*/
